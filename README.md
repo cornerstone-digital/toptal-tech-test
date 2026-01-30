@@ -32,6 +32,14 @@ src/
 └── index.ts         # Entry point for console output
 ```
 
+## Git Hooks
+
+Pre-commit hook automatically runs:
+
+1. **lint-staged** - ESLint fix + Prettier on staged `.ts` files
+2. **typecheck** - TypeScript type checking
+3. **test** - All tests
+
 ## Workflow
 
 1. Implement solution in `src/solution.ts`

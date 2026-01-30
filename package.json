@@ -14,12 +14,19 @@
     "lint:fix": "eslint src --fix",
     "format": "prettier --write src",
     "format:check": "prettier --check src",
-    "qg:all": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test"
+    "qg:all": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.28.2",
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/node": "^25.1.0",
