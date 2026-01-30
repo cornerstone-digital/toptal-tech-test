@@ -21,6 +21,7 @@ pnpm install
 | `pnpm lint:fix` | Auto-fix linting errors |
 | `pnpm format` | Format code with Prettier |
 | `pnpm format:check` | Check code formatting |
+| `pnpm qg:all` | Run all quality gates (typecheck, lint, format, test) |
 
 ## Project Structure
 
